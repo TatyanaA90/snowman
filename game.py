@@ -27,7 +27,7 @@ def snowman(snowman_word):
         
         user_input = get_letter_from_user(correct_letter_guess_statuses, wrong_guesses_list)
 
-        if user_input in correct_letter_guess_statuses:
+        if correct_letter_guess_statuses.get(user_input) != None:
             print("You guessed a letter that's in the word!")
 
             # Add a correctly guessed letter to `correct_guesses_list`
