@@ -36,7 +36,7 @@ def snowman(snowman_word):
             print(f"The letter {user_input} is not in the word")
             wrong_guesses_list.append(user_input)
     
-        print(f"Wrong guesses: {wrong_guesses_list}")
+        print(f"Wrong guesses: {', '.join(wrong_guesses_list)}")
         print_word_progress_string(snowman_word, correct_letter_guess_statuses)
 
         if is_word_guessed(snowman_word, correct_letter_guess_statuses):
